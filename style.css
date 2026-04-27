@@ -1,31 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Lora:ital@0;1&family=Ubuntu+Mono:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
 
+/* Light mode (default) - tweakCN theme */
 :root {
-  --bg: #ffffff;
-  --bg2: #f4f4f5;
-  --text: #09090b;
-  --text2: #52525b;
-  --text3: #a1a1aa;
-  --accent: #18181b;
-  --accent-light: #f4f4f5;
-  --border: #e4e4e7;
-  --border2: #f4f4f5;
+  --bg: #F8F7F5;
+  --bg2: #ECEAE6;
+  --text: #3D3A35;
+  --text2: #6B6660;
+  --text3: #9B9590;
+  --accent: #4A5FBE;
+  --accent-light: #F0F3FE;
+  --border: #E1DFD8;
+  --border2: #EAE7E0;
 
-  --tag-award-bg: #fefce8; --tag-award: #854d0e;
-  --tag-work-bg:  #eff6ff; --tag-work:  #1d4ed8;
-  --tag-proj-bg:  #f0fdf4; --tag-proj:  #15803d;
-  --tag-act-bg:   #faf5ff; --tag-act:   #7e22ce;
-  --tag-edu-bg:   #ecfdf5; --tag-edu:   #047857;
+  --tag-award-bg: #FDF0DC; --tag-award: #7A4510;
+  --tag-work-bg:  #E8F0FA; --tag-work:  #1A4A80;
+  --tag-proj-bg:  #EBF4E2; --tag-proj:  #2A5C10;
+  --tag-act-bg:   #F0F0FE; --tag-act:   #4A5FBE;
+  --tag-edu-bg:   #E2F3EE; --tag-edu:   #0A5040;
 
-  --radius: 6px;
+  --radius: 11px;
   --nav-h: 56px;
+}
+
+/* Dark mode - tweakCN theme */
+body.dark {
+  --bg: #1D1B18;
+  --bg2: #2A2824;
+  --text: #F9F8F7;
+  --text2: #D4D1CE;
+  --text3: #A9A6A2;
+  --accent: #6BB874;
+  --accent-light: #1F3C1A;
+  --border: #3D3A35;
+  --border2: #47433D;
+
+  --tag-award-bg: #3E2A0D; --tag-award: #F9D18E;
+  --tag-work-bg:  #0F2854; --tag-work:  #7EBFFF;
+  --tag-proj-bg:  #1A3A0E; --tag-proj:  #8FE086;
+  --tag-act-bg:   #2A1F4A; --tag-act:   #A08FFF;
+  --tag-edu-bg:   #0F3A2A; --tag-edu:   #7FE8D1;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Geist', 'Noto Sans KR', -apple-system, sans-serif;
+  font-family: 'Montserrat', 'Noto Sans KR', -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -39,13 +59,14 @@ body.ko { font-family: 'Noto Sans KR', 'Geist', sans-serif; }
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   height: var(--nav-h);
-  background: rgba(255,255,255,0.92);
+  background: rgba(248, 247, 245, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
-  display: flex; align-items: center;
-  padding: 0 2rem;
-  z-index: 100;
+}
+
+body.dark nav {
+  background: rgba(29, 27, 24, 0.92);
 }
 
 .nav-logo {

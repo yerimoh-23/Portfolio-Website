@@ -23,6 +23,28 @@ function toggleLang() {
   setLang(isKo ? 'en' : 'ko');
 }
 
+// ── Dark Mode Toggle ──
+const THEME_KEY = 'portfolio-theme';
+
+function initTheme() {
+  const saved = localStorage.getItem(THEME_KEY) || 'light';
+  setTheme(saved, false);
+}
+
+function setTheme(theme, save = true) {
+  if (save) localStorage.setItem(THEME_KEY, theme);
+  if (theme === 'dark') {
+    document.body.classList.add('dark');
+  } else {
+    document.body.classList.remove('dark');
+  }
+}
+
+function toggleTheme() {
+  const isDark = document.body.classList.contains('dark');
+  setTheme(isDark ? 'light' : 'dark');
+}
+
 // ── Active Nav Link ──
 function initNav() {
   const current = window.location.pathname.split('/').pop() || 'index.html';
@@ -50,9 +72,16 @@ function initTabs() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initLang();
   initNav();
   initTabs();
   const btn = document.getElementById('lang-toggle');
   if (btn) btn.addEventListener('click', toggleLang);
+  // Optional: add keyboard shortcut for dark mode toggle (Ctrl+Shift+D)
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === 'D') {
+      toggleTheme();
+    }
+  });
 });
