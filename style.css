@@ -55,6 +55,11 @@ body {
 }
 body.ko { font-family: 'Noto Sans KR', 'Montserrat', sans-serif; }
 
+/* Keep nav-links font consistent in Korean mode */
+body.ko .nav-links a {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
@@ -86,7 +91,6 @@ body.dark nav {
 .nav-links { display: flex; gap: 2px; list-style: none; }
 
 .nav-links a {
-  font-family: 'Montserrat', sans-serif;
   display: block;
   padding: 8px 12px;
   font-size: 13px;
