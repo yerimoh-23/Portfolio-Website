@@ -384,6 +384,5 @@ footer {
 }
 
 /* ── LANG SWITCH ── */
-[data-en], [data-ko] { }
 body.ko [data-en] { display: none !important; }
 body:not(.ko) [data-ko] { display: none !important; }
