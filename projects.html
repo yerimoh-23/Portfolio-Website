@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Yerim Oh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Yerim Oh</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="lang-toggle" id="lang-toggle">한국어</button>
+</nav>
+
+<main class="page">
+
+  <h1 data-en>Projects</h1>
+  <h1 data-ko>프로젝트</h1>
+
+  <p style="margin: 1rem 0 2rem; max-width: 500px;" data-en>A selection of analytical and development projects. Click any card to view the GitHub repository.</p>
+  <p style="margin: 1rem 0 2rem; max-width: 500px;" data-ko>분석 및 개발 프로젝트 목록입니다. 카드를 클릭하면 GitHub 저장소로 이동합니다.</p>
+
+  <div class="proj-grid">
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/MachineLearning-StartingSalaryPredictionModel" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">Starting Salary Prediction Model</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>Built a regression-based ML model to analyze how institutional characteristics influence early-career salary outcomes across 444 U.S. colleges. Compared linear regression, ridge regression, and decision tree regression — best performance: R² ≈ 0.80.</p>
+      <p class="proj-desc" data-ko>444개 미국 대학의 기관 특성이 초봉에 미치는 영향을 분석하는 회귀 기반 머신러닝 모델 구축. 다중회귀, Ridge, Decision Tree 비교 — 최고 성능: R² ≈ 0.80.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">Pandas</span>
+        <span class="proj-tag">Regression</span>
+        <span class="proj-tag">Machine Learning</span>
+        <span class="proj-tag">EDA</span>
+      </div>
+    </a>
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/2023-Global-Development-Prosperity" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">2023 Global Development &amp; Prosperity</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>Unsupervised learning analysis of global prosperity patterns using the 2023 GDP Index (167 countries, 12 indicators). Applied K-means clustering to identify 3 structural country groups: advanced, transitional, and structurally constrained economies.</p>
+      <p class="proj-desc" data-ko>2023 GDP Index(167개국, 12개 지표)를 활용한 글로벌 번영 패턴 비지도 학습 분석. K-means 클러스터링으로 선진·전환·취약 경제권 3개 그룹 식별.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">R</span>
+        <span class="proj-tag">K-Means Clustering</span>
+        <span class="proj-tag">Unsupervised Learning</span>
+        <span class="proj-tag">EDA</span>
+        <span class="proj-tag">Data Visualization</span>
+      </div>
+    </a>
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/F1-MiamiGP-Pit-Stop-Analysis" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">F1 Miami GP Pit Stop Analysis</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>Multivariate analysis of Formula 1 pit stop strategy using 1,111 laps of race telemetry from the 2024 Miami Grand Prix. Built logistic regression models with k-fold cross-validation to quantify how tire degradation and age influence pit stop probability.</p>
+      <p class="proj-desc" data-ko>2024 F1 마이애미 GP의 1,111랩 텔레메트리 데이터를 활용한 피트스톱 전략 다변량 분석. k-fold 교차검증을 적용한 로지스틱 회귀 모델로 타이어 마모 및 수명이 피트스톱 확률에 미치는 영향 정량화.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">R</span>
+        <span class="proj-tag">Logistic Regression</span>
+        <span class="proj-tag">Cross-Validation</span>
+        <span class="proj-tag">Statistical Modeling</span>
+        <span class="proj-tag">Data Visualization</span>
+      </div>
+    </a>
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/FractalGrowth-ModelingProject" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">Models of Fractal Growth</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>Research project: simulation-based modeling framework to analyze pattern formation and growth dynamics in polymer thin films. Implemented a modified Triangular Growth Model (TGM) in NetLogo; designed parameter-driven experiments and evaluated output using quantitative metrics. Presented at MHC Senior Symposium (Apr 2025).</p>
+      <p class="proj-desc" data-ko>연구 프로젝트: 폴리머 박막의 패턴 형성 및 성장 역학 분석을 위한 시뮬레이션 기반 모델링 프레임워크. NetLogo에서 수정된 삼각 성장 모델(TGM) 구현; 파라미터 기반 실험 설계 및 정량적 지표로 출력 평가. MHC Senior Symposium 발표 (2025.04).</p>
+      <div class="proj-tags">
+        <span class="proj-tag">NetLogo</span>
+        <span class="proj-tag">R</span>
+        <span class="proj-tag">Simulation Modeling</span>
+        <span class="proj-tag">Computational Experiments</span>
+        <span class="proj-tag">Research</span>
+      </div>
+    </a>
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/HackHolyoke2022" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">Mental Health Screening Web App</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>Designed and developed a responsive web application within 24 hours to conduct depression and anxiety screening assessments and generate personalized recommendations. Awarded Best Remote Health Hack at HackHolyoke 2022 (9 of 16 teams submitted).</p>
+      <p class="proj-desc" data-ko>24시간 내 우울·불안 스크리닝 평가 및 맞춤형 추천을 제공하는 반응형 웹앱 설계·개발. HackHolyoke 2022 Best Remote Health Hack 수상 (16팀 참가, 제출 9팀 중).</p>
+      <div class="proj-tags">
+        <span class="proj-tag">HTML</span>
+        <span class="proj-tag">CSS</span>
+        <span class="proj-tag">JavaScript</span>
+        <span class="proj-tag">Hackathon</span>
+      </div>
+    </a>
+
+    <a class="proj-card" href="https://github.com/yerimoh-23/AngryFlappyBird" target="_blank">
+      <div class="proj-card-top">
+        <div class="proj-name">AngryFlappyBird</div>
+        <div class="proj-link-icon">↗</div>
+      </div>
+      <p class="proj-desc" data-en>A modified Flappy Bird game implemented in Java with JavaFX. Features 3 difficulty levels, custom-designed icons and animations, and a full game UI with level selector. Built as part of the Software Design &amp; Development course.</p>
+      <p class="proj-desc" data-ko>JavaFX로 구현한 Flappy Bird 변형 게임. 난이도 3단계, 커스텀 아이콘·애니메이션, 레벨 선택 UI 포함. Software Design &amp; Development 수업 프로젝트.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Java</span>
+        <span class="proj-tag">JavaFX</span>
+        <span class="proj-tag">HTML</span>
+        <span class="proj-tag">CSS</span>
+        <span class="proj-tag">JavaScript</span>
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  <span data-en>© 2026 Yerim Oh · yerimoh-23.github.io</span>
+  <span data-ko>© 2026 오예림 · yerimoh-23.github.io</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
