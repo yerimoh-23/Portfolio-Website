@@ -6,17 +6,17 @@
   --bg2: #edebe8;
   --text: #333333;
   --text2: #3b3b3b;
-  --text3: #8c8f98;
-  --accent: #5c6f96;
+  --text3: #5c6f96;
+  --accent: #405682;
   --accent-light: #8aa2c4;
   --border: #d9d9d9;
   --border2: #ebebeb;
 
-  --tag-award-bg: #e8d2d3; --tag-award: #a14a4d;
-  --tag-work-bg:  #ebe2cc; --tag-work:  #e3ba64;
-  --tag-proj-bg:  #d7e1d0; --tag-proj:  #8ba27c;
-  --tag-act-bg:   #d4ddec; --tag-act:   #4f74b0;
-  --tag-edu-bg:   #e4def0; --tag-edu:   #8778ab;
+  --tag-award-bg: #e8d2d3; --tag-award: #702e30;
+  --tag-work-bg:  #ebe2cc; --tag-work:  #be8918;
+  --tag-proj-bg:  #d7e1d0; --tag-proj:  #4e6440;
+  --tag-act-bg:   #d4ddec; --tag-act:   #344d76;
+  --tag-edu-bg:   #e4def0; --tag-edu:   #473b64;
 
   --radius: 11px;
   --nav-h: 56px;
@@ -28,7 +28,7 @@ body.dark {
   --bg2: #3b3b3b;
   --text: #f7f7f7;
   --text2: #edebe8;
-  --text3: #c5c6ca;
+  --text3: #a6bddd;
   --accent: #5c6f96;
   --accent-light: #8aa2c4;
   --border: #343434;
@@ -132,7 +132,7 @@ h1 {
 }
 
 h2 {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text);
   margin-bottom: 0.25rem;
@@ -162,23 +162,23 @@ p { color: var(--text2); line-height: 1.7; }
   font-size: 10px;
   font-weight: 500;
   padding: 2px 7px;
-  border-radius: 4px;
+  border-radius: 10px;
   white-space: nowrap;
   letter-spacing: 0.02em;
   border: 1px solid transparent;
 }
-.tag-award { background: var(--tag-award-bg); color: var(--tag-award); border-color: #fde68a; }
-.tag-work  { background: var(--tag-work-bg);  color: var(--tag-work);  border-color: #bfdbfe; }
-.tag-proj  { background: var(--tag-proj-bg);  color: var(--tag-proj);  border-color: #bbf7d0; }
-.tag-act   { background: var(--tag-act-bg);   color: var(--tag-act);   border-color: #e9d5ff; }
-.tag-edu   { background: var(--tag-edu-bg);   color: var(--tag-edu);   border-color: #a7f3d0; }
+.tag-award { background: var(--tag-award-bg); color: var(--tag-award); border-color: var(--tag-award); }
+.tag-work  { background: var(--tag-work-bg);  color: var(--tag-work);  border-color: var(--tag-work); }
+.tag-proj  { background: var(--tag-proj-bg);  color: var(--tag-proj);  border-color: var(--tag-proj); }
+.tag-act   { background: var(--tag-act-bg);   color: var(--tag-act);   border-color: var(--tag-act); }
+.tag-edu   { background: var(--tag-edu-bg);   color: var(--tag-edu);   border-color: var(--tag-edu); }
 
 /* ── BADGE ── */
 .badge {
   display: inline-block;
   font-size: 10px;
-  padding: 1px 6px;
-  border-radius: 4px;
+  padding: 1px 7px;
+  border-radius: 10px;
   background: var(--bg2);
   color: var(--text3);
   border: 1px solid var(--border);
@@ -187,7 +187,7 @@ p { color: var(--text2); line-height: 1.7; }
   font-weight: 400;
 }
 
-.hl { color: #2563eb; font-weight: 500; }
+.hl { color: var(--accent); font-weight: 500; }
 
 /* ── TABS ── */
 .tabs {
